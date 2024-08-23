@@ -43,13 +43,15 @@ change the VERSION with your chrome version. Exctract into the same directory as
    SPV = 'wilayah_tugas_sak_82024.xlsx'
    ```
 
-3. Run the script.
+3. Make sure every tab in SQL lab was closed 
 
-4. Please do a manual login on the instructed part
+4. Run the script.
 
-5. Run the rest of the code
+5. Please do a manual login on the instructed part
 
-6. The script will create a directory containing all the downloaded anomalies, a directory containing anomalies for each Supervisor, and an excel file which contains all the anomalies combined into one.
+6. Run the rest of the code
+
+7. The script will create a directory containing all the downloaded anomalies, a directory containing anomalies for each Supervisor, and an excel file which contains all the anomalies combined into one.
 
 ## Input Data Structure
 
