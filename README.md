@@ -53,7 +53,7 @@ change the VERSION with your chrome version. Exctract into the same directory as
 
 7. The script will create a directory containing all the downloaded anomalies, a directory containing anomalies for each Supervisor, and an excel file which contains all the anomalies combined into one.
 
-8. (Optional) RUn the script to add status and last modified using input from STS path structure on [Data Structure](#notes).
+8. (Optional) RUn the script to add status and last modified using input from STS path structure on [Data Structure](#status-data).
 
 ## Input Data Structure
 
