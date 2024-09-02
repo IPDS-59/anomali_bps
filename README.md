@@ -53,7 +53,9 @@ change the VERSION with your chrome version. Exctract into the same directory as
 
 7. The script will create a directory containing all the downloaded anomalies, a directory containing anomalies for each Supervisor, and an excel file which contains all the anomalies combined into one.
 
-8. (Optional) RUn the script to add status and last modified using input from STS path structure on [Data Structure](#status-data).
+8. (Optional) Run the script to add status and last modified using input from STS path structure on [Data Structure](#status-data).
+
+   This will also compare the anomaly code with the one in column "catatan" and return anomaly that was not in catatan. The working process was by casecading catatan and use regex to look for "ANOMALI_" and took the code, store it in "anomali" column, check if "kode" is inside "anomali" and store the result in "kode_dalam_catatan" as boolean.
 
 ## Input Data Structure
 
@@ -74,11 +76,11 @@ For Supervisor data it should have the following columns.
 
 ### Status data
 
-The data containing status and last modified should have the following columns.
+The data containing status and last modified should have the following columns. For sample query, please follow this [link](https://fasih-dashboard.bps.go.id/superset/sqllab?savedQueryId=9669).
 
-| idbs | DSRT | status | last_modified |
-| --- | --- | --- | --- |
-| ... | ... | ... | ... |
+| idbs | DSRT | status | last_modified | catatan |
+| --- | --- | --- | --- | --- |
+| ... | ... | ... | ... | ... |
 
 ## Directory Structure
 
