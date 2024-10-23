@@ -34,6 +34,8 @@ change the VERSION with your chrome version. Exctract into the same directory as
 
 ## Usage
 
+### Manual (Notebook)
+
 1. Open anomali_bps.ipynb in your favorite notebook environment
 
 2. Change the INPUT into the path of your excel file containing list of anomalies and SPV into the path of supervisor data:
@@ -56,6 +58,12 @@ change the VERSION with your chrome version. Exctract into the same directory as
 8. (Optional) Run the script to add status and last modified using input from STS path structure on [Data Structure](#status-data).
 
    This will also compare the anomaly code with the one in column "catatan" and return anomaly that was not in catatan. The working process was by casecading catatan and use regex to look for "ANOMALI_" and took the code, store it in "anomali" column, check if "kode" is inside "anomali" and store the result in "kode_dalam_catatan" as boolean.
+
+### Use the Exe file
+
+1. Download the "dist/anomali_bps" directory
+
+2. Run "anomali_bps.exe"
 
 ## Input Data Structure
 
